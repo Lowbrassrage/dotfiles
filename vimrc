@@ -22,6 +22,10 @@ set gcr=a:blinkon0				" Disable blinking
 set visualbell					" Let's mute those horrible noises
 set autoread 					" Automatically read changes to files outside
 
+" ========= Key Remapping ===========
+:imap <C-BS> <C-W>				" Let Ctrl+backspace delete last word
+
+
 " Switch syntax highlighting on
 syntax on
  
@@ -53,3 +57,11 @@ set softtabstop=0
 set noexpandtab 
 set shiftwidth=4
 
+" =========== Split Navigation =========
+nnoremap <C-j> <C-W><C-J>
+nnoremap <C-k> <C-W><C-K>
+nnoremap <C-l> <C-W><C-L>
+nnoremap <C-h> <C-W><C-H>
+
+set splitbelow
+set splitright
